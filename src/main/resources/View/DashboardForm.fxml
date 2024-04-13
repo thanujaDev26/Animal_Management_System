@@ -24,7 +24,7 @@
             </font>
         </Text>
         <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#43c17a" height="202.0" layoutX="49.0" layoutY="206.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="656.0" />
-        <Text fill="#353a52aa" layoutX="58.0" layoutY="128.0" opacity="0.66" strokeType="OUTSIDE" strokeWidth="0.0" text="You can see here components about this system">
+        <Text fill="#353a52aa" layoutX="58.0" layoutY="128.0" opacity="0.66" strokeType="OUTSIDE" strokeWidth="0.0" text="Insights into Biodiversity">
             <font>
                 <Font name="Poppins Regular" size="15.0" />
             </font>
@@ -75,15 +75,15 @@
       <Circle fill="WHITE" layoutX="929.0" layoutY="221.0" radius="93.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
       <ImageView fx:id="dashboardImage1" fitHeight="210.0" fitWidth="176.0" layoutX="841.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/dog.png" />
+            <Image url="@../image/leopard.png" />
          </image>
       </ImageView>
-      <Text fx:id="dashboardAnimalName1" fill="#353a52" layoutX="787.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dog" textAlignment="CENTER" wrappingWidth="277.9999953508377">
+      <Text fx:id="dashboardAnimalName1" fill="#353a52" layoutX="787.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leopard" textAlignment="CENTER" wrappingWidth="277.9999953508377">
          <font>
             <Font name="SansSerif Regular" size="27.0" />
          </font>
       </Text>
-      <Text fx:id="dashboardAnimalSname1" fill="#353a52" layoutX="787.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A wildlife management" textAlignment="CENTER" wrappingWidth="277.9999953508377">
+      <Text fx:id="dashboardAnimalSname1" fill="#353a52" layoutX="787.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panthera Pardus" textAlignment="CENTER" wrappingWidth="277.9999953508377">
          <font>
             <Font size="20.0" />
          </font>
@@ -92,15 +92,15 @@
       <Circle fill="WHITE" layoutX="1250.0" layoutY="221.0" radius="93.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
       <ImageView fx:id="dashboardImage2" fitHeight="210.0" fitWidth="176.0" layoutX="1162.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/rabbit.png" />
+            <Image url="@../image/elephant.jpeg" />
          </image>
       </ImageView>
-      <Text fx:id="dashboardAnimalName2" fill="#353a52" layoutX="1108.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rabbit" textAlignment="CENTER" wrappingWidth="278.00000593066216">
+      <Text fx:id="dashboardAnimalName2" fill="#353a52" layoutX="1108.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elephant" textAlignment="CENTER" wrappingWidth="278.00000593066216">
          <font>
             <Font name="SansSerif Regular" size="27.0" />
          </font>
       </Text>
-      <Text fx:id="dashboardAnimalSname2" fill="#353a52" layoutX="1108.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A wildlife management" textAlignment="CENTER" wrappingWidth="277.9999953508377">
+      <Text fx:id="dashboardAnimalSname2" fill="#353a52" layoutX="1108.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elephas Maximus" textAlignment="CENTER" wrappingWidth="277.9999953508377">
          <font>
             <Font size="20.0" />
          </font>
@@ -109,15 +109,15 @@
       <Circle fill="WHITE" layoutX="927.0" layoutY="582.0" radius="93.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
       <ImageView fx:id="dashboardImage3" fitHeight="210.0" fitWidth="176.0" layoutX="839.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/parrot.png" />
+            <Image url="@../image/deer3.jpeg" />
          </image>
       </ImageView>
-      <Text fx:id="dashboardAnimalName3" fill="#353a52" layoutX="786.0" layoutY="718.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parrot" textAlignment="CENTER" wrappingWidth="277.9999953508377">
+      <Text fx:id="dashboardAnimalName3" fill="#353a52" layoutX="786.0" layoutY="718.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spotted Deer" textAlignment="CENTER" wrappingWidth="277.9999953508377">
          <font>
             <Font name="SansSerif Regular" size="27.0" />
          </font>
       </Text>
-      <Text fx:id="dashboardAnimalSname3" fill="#353a52" layoutX="785.0" layoutY="755.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A wildlife management" textAlignment="CENTER" wrappingWidth="277.9999953508377">
+      <Text fx:id="dashboardAnimalSname3" fill="#353a52" layoutX="785.0" layoutY="755.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Axis axis" textAlignment="CENTER" wrappingWidth="277.9999953508377">
          <font>
             <Font size="20.0" />
          </font>
@@ -126,15 +126,15 @@
       <Circle fill="WHITE" layoutX="1250.0" layoutY="582.0" radius="93.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
       <ImageView fx:id="dashboardImage4" fitHeight="210.0" fitWidth="176.0" layoutX="1162.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/horse.png" />
+            <Image url="@../image/owl.jpg" />
          </image>
       </ImageView>
-      <Text fx:id="dashboardAnimalName4" fill="#353a52" layoutX="1109.0" layoutY="716.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horse" textAlignment="CENTER" wrappingWidth="277.9999953508377">
+      <Text fx:id="dashboardAnimalName4" fill="#353a52" layoutX="1109.0" layoutY="716.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fish Owl" textAlignment="CENTER" wrappingWidth="277.9999953508377">
          <font>
             <Font name="SansSerif Regular" size="27.0" />
          </font>
       </Text>
-      <Text fx:id="dashboardAnimalSname4" fill="#353a52" layoutX="1108.0" layoutY="756.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A wildlife management" textAlignment="CENTER" wrappingWidth="277.9999900609255">
+      <Text fx:id="dashboardAnimalSname4" fill="#353a52" layoutX="1108.0" layoutY="756.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Strigiformes" textAlignment="CENTER" wrappingWidth="277.9999900609255">
          <font>
             <Font size="20.0" />
          </font>
