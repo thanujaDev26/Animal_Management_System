@@ -396,7 +396,8 @@ public class AnimalFormController implements Initializable {
                 "China", "Japan", "India", "South Korea", "Australia",
                 "Russia", "South Africa", "Egypt", "Nigeria", "Kenya",
                 "Saudi Arabia", "United Arab Emirates", "Turkey", "Iran", "Israel",
-                "Sweden", "Norway", "Denmark", "Netherlands", "Sri Lanka", "Switzerland"
+                "Sweden", "Norway", "Denmark", "Netherlands", "Sri Lanka", "Switzerland","Cambodia","Austria","Nepal","Siberia",
+                "Angola"
         );
         cmbLocation.setItems(countries);
         engine = mapView.getEngine();

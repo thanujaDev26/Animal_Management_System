@@ -280,7 +280,7 @@ public class DashboardFormController implements Initializable {
             );
             System.out.println("\uD83D\uDC26\uD83D\uDC26\uD83D\uDC26\uD83D\uDC26");
         } else {
-            new Alert(Alert.AlertType.WARNING,"No bird found in the image").show();
+            new Alert(Alert.AlertType.WARNING,"No Animal found in the image").show();
             imageuploadview.setImage(new Image("image/updateLocationImg.png"));
         }
     }
