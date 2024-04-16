@@ -1,5 +1,6 @@
 package controller;
 
+import db.DBRestore;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,6 +20,7 @@ public class LoginFormController {
 
     public Button btnAdmin;
     public Button btnUser;
+    public DBRestore db;
 
     public void btnAdminOnAction(ActionEvent actionEvent) throws IOException {
         Parent loginParent = FXMLLoader.load(getClass().getResource("/view/dashboardForm.fxml"));
@@ -33,6 +35,7 @@ public class LoginFormController {
         window1.getIcons().add(image);
         window1.setTitle("Wildlife Management System - Admin Dashboard Page");
         window1.show();
+        DBRestore.restore();
     }
 
     public void btnUserOnAction(ActionEvent actionEvent) throws IOException {
@@ -53,5 +56,6 @@ public class LoginFormController {
         window1.getIcons().add(image);
         window1.setTitle("Wildlife Management System - User Dashboard Page");
         window1.show();
+        DBRestore.restore();
     }
 }

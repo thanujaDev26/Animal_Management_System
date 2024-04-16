@@ -10,6 +10,7 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextArea;
 import com.jfoenix.controls.JFXTextField;
+import db.DBBackup;
 import entity.Animal;
 import entity.Location;
 import io.github.cdimascio.dotenv.Dotenv;
@@ -232,6 +233,7 @@ public class AnimalFormController implements Initializable {
                                 if (animalModel.saveAnimal(animal)) {
 
                                     new Alert(Alert.AlertType.CONFIRMATION, "Animal saved successfully!").show();
+                                    DBBackup.backup();
                                     Stage stage = (Stage) txtCommonName.getScene().getWindow();
                                     stage.close();
 
