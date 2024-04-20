@@ -75,7 +75,7 @@
       <Circle fill="WHITE" layoutX="929.0" layoutY="221.0" radius="93.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
       <ImageView fx:id="dashboardImage1" fitHeight="210.0" fitWidth="176.0" layoutX="841.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/horse.png" />
+            <Image url="@../image/leopard.png" />
          </image>
       </ImageView>
       <Text fx:id="dashboardAnimalName1" fill="#353a52" layoutX="787.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leopard" textAlignment="CENTER" wrappingWidth="277.9999953508377">
@@ -92,7 +92,7 @@
       <Circle fill="WHITE" layoutX="1250.0" layoutY="221.0" radius="93.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
       <ImageView fx:id="dashboardImage2" fitHeight="210.0" fitWidth="176.0" layoutX="1162.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/dog.png" />
+            <Image url="@../image/elephant.jpeg" />
          </image>
       </ImageView>
       <Text fx:id="dashboardAnimalName2" fill="#353a52" layoutX="1108.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elephant" textAlignment="CENTER" wrappingWidth="278.00000593066216">
