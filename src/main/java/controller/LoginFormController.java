@@ -23,7 +23,7 @@ public class LoginFormController {
     public DBRestore db;
 
     public void btnAdminOnAction(ActionEvent actionEvent) throws IOException {
-        Parent loginParent = FXMLLoader.load(getClass().getResource("/view/dashboardForm.fxml"));
+        Parent loginParent = FXMLLoader.load(getClass().getResource("/view/signin-page.fxml"));
         Scene loginScene = new Scene(loginParent);
         Stage window = (Stage) btnAdmin.getScene().getWindow();
         window.close();
@@ -33,7 +33,7 @@ public class LoginFormController {
         // Set the application icon for the dashboard stage
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
         window1.getIcons().add(image);
-        window1.setTitle("Wildlife Management System - Admin Dashboard Page");
+        window1.setTitle("Wildlife Management System - Admin Sign In Page");
         window1.show();
         DBRestore.restore();
     }

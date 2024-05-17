@@ -1,0 +1,36 @@
+.window-image{
+    -fx-border-radius: 100;
+    -fx-background-radius: 100;
+}
+
+.window-background{
+    -fx-background-color: rgba(202, 246, 204, 1);
+    -fx-background-radius: 0 50 50 0;
+}
+
+.login-label{
+    -fx-background-color: rgba(155, 249, 159, 0.72);
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-padding: -1 0 0 10;
+    -fx-text-fill: rgba(131, 208, 103, 1);
+    -fx-prompt-text-fill: rgba(131, 208, 103, 1);
+    -fx-font-size: 20px;
+}
+
+pass-label{
+
+}
+
+.in-alert{
+    -fx-alignment: center;
+}
+
+.in-button{
+    -fx-background-radius: 25;
+    -fx-background-color:  linear-gradient(to right, rgba(66, 253, 0, 0.7), rgba(156, 255, 78, 1));
+}
+
+.up-button{
+    -fx-background-color: none;
+}
