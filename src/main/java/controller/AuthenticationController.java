@@ -17,6 +17,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import model.AdminModel;
 import model.AdminModelImpl;
+import org.mindrot.jbcrypt.BCrypt;
 
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -39,6 +40,7 @@ public class AuthenticationController {
     public void onUpButtonClick() {
         String user = upUser.getText();
         String pass = upPass.getText();
+        String hashedPass = hashPassword(pass);
         String email = upEmail.getText();
 
         if (user.isEmpty()) {
@@ -48,14 +50,16 @@ public class AuthenticationController {
         } else if (pass.isEmpty()) {
             upAlert.setText("Password field can't be empty");
         } else {
-            Admin admin = new Admin(user, pass, email);
-            if (adminModel.saveAdmin(admin)) {
-
-                new Alert(Alert.AlertType.CONFIRMATION, "Admin registered successfully!").show();
-                DBBackup.backup();
-
-            } else {
-                new Alert(Alert.AlertType.WARNING, "Admin registration unsuccessful!").show();
+            Admin admin = new Admin(user, hashedPass, email);
+            if(adminModel.searchAdmin(user) == null ){
+                if (adminModel.saveAdmin(admin)) {
+                    new Alert(Alert.AlertType.CONFIRMATION, "Admin registered successfully!").show();
+                    DBBackup.backup();
+                } else {
+                    new Alert(Alert.AlertType.WARNING, "Admin registration unsuccessful!").show();
+                }
+            }else{
+                new Alert(Alert.AlertType.WARNING, "Admin already exists!").show();
             }
         }
         clearUp();
@@ -70,10 +74,9 @@ public class AuthenticationController {
         } else if (pass.isEmpty()) {
             inAlert.setText("Password field can't be empty");
         } else {
-
             Admin admin = adminModel.searchAdmin(user);
             if(admin != null){
-                if(admin.getPassword().equals(pass)){
+                if(checkPassword(pass, admin.getPassword())){
                     switchToDashBoard(event);
                 }else{
                     new Alert(Alert.AlertType.WARNING, "Password is incorrect").show();
@@ -95,6 +98,14 @@ public class AuthenticationController {
         upUser.setText("");
         upEmail.setText("");
         upPass.setText("");
+    }
+
+    public static String hashPassword(String plainTextPassword) {
+        String salt = BCrypt.gensalt(12);
+        return BCrypt.hashpw(plainTextPassword, salt);
+    }
+    public static boolean checkPassword(String plainTextPassword, String hashedPassword) {
+        return BCrypt.checkpw(plainTextPassword, hashedPassword);
     }
 
     protected void switchToDashBoard(ActionEvent event) throws IOException {
