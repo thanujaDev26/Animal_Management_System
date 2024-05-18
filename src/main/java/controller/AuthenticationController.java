@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 import model.AdminModel;
 import model.AdminModelImpl;
 import org.mindrot.jbcrypt.BCrypt;
+import java.util.regex.Pattern;
 
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -49,7 +50,7 @@ public class AuthenticationController {
             upAlert.setText("Email field can't be empty");
         } else if (pass.isEmpty()) {
             upAlert.setText("Password field can't be empty");
-        } else {
+        } else if (isPasswordComplex(pass)) {
             Admin admin = new Admin(user, hashedPass, email);
             if(adminModel.searchAdmin(user) == null ){
                 if (adminModel.saveAdmin(admin)) {
@@ -61,8 +62,10 @@ public class AuthenticationController {
             }else{
                 new Alert(Alert.AlertType.WARNING, "Admin already exists!").show();
             }
+            clearUp();
+            upAlert.setText("");
         }
-        clearUp();
+
     }
     @FXML
     public void onInButtonClick(ActionEvent event) throws IOException {
@@ -84,8 +87,8 @@ public class AuthenticationController {
             }else{
                 new Alert(Alert.AlertType.WARNING, "Admin not found!").show();
             }
+            clearIn();
         }
-        clearIn();
     }
 
     @FXML
@@ -100,12 +103,39 @@ public class AuthenticationController {
         upPass.setText("");
     }
 
-    public static String hashPassword(String plainTextPassword) {
+    public String hashPassword(String plainTextPassword) {
         String salt = BCrypt.gensalt(12);
         return BCrypt.hashpw(plainTextPassword, salt);
     }
-    public static boolean checkPassword(String plainTextPassword, String hashedPassword) {
+    public boolean checkPassword(String plainTextPassword, String hashedPassword) {
         return BCrypt.checkpw(plainTextPassword, hashedPassword);
+    }
+
+    public boolean isPasswordComplex(String password) {
+        // Define the regex patterns for the various criteria
+        Pattern lengthPattern = Pattern.compile(".{8,}");
+        Pattern upperCasePattern = Pattern.compile("[A-Z]");
+        Pattern lowerCasePattern = Pattern.compile("[a-z]");
+        Pattern digitPattern = Pattern.compile("[0-9]");
+        Pattern specialCharPattern = Pattern.compile("[^a-zA-Z0-9]");
+
+        boolean check = false;
+
+        // Check each pattern
+        if(!lengthPattern.matcher(password).matches()){
+            upAlert.setText("At least 8 characters long");
+        } else if(!upperCasePattern.matcher(password).find()){
+            upAlert.setText("At least one uppercase letter");
+        } else if (!lowerCasePattern.matcher(password).find()) {
+            upAlert.setText("At least one lowercase letter");
+        } else if (!digitPattern.matcher(password).find()) {
+            upAlert.setText("At least one digit");
+        } else if (!specialCharPattern.matcher(password).find()) {
+            upAlert.setText("At least one special character");
+        } else {
+            check = true;
+        }
+        return check;
     }
 
     protected void switchToDashBoard(ActionEvent event) throws IOException {
