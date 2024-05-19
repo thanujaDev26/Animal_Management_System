@@ -1,6 +1,8 @@
 package db;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class DBRestore {
     public static void restore() {
@@ -9,7 +11,7 @@ public class DBRestore {
         String databaseName = "wild_life"; // Database name
         String backupPath = "./src/main/resources/db/wild_life"; // Directory containing backup
 
-        if(DBCheck.check()){
+        if(!DBCheck.check()){
             try {
                 // Execute mongorestore command
                 ProcessBuilder pb = new ProcessBuilder("mongorestore", "--host", host, "--port", String.valueOf(port), "--db", databaseName, backupPath);
@@ -21,6 +23,22 @@ public class DBRestore {
                     System.out.println("Restore failed.");
                 }
             } catch (IOException | InterruptedException e) {
+                e.printStackTrace();
+            }
+        }else{
+            try {
+                String command = String.format("mongorestore --db %s %s/%s", databaseName, backupPath, databaseName);
+                Process process = Runtime.getRuntime().exec(command);
+
+                // Read the output from the command
+                BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    System.out.println(line);
+                }
+                process.waitFor();
+                System.out.println("Restore completed.");
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }

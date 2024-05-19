@@ -16,10 +16,10 @@ public class DBCheck {
             boolean exists = mongoClient.getDatabase("wild_life").listCollectionNames().iterator().hasNext();
             if (exists) {
                 System.out.println("Database exists!");
-                check = false;
+                check = true;
             } else {
                 System.out.println("Database does not exist!");
-                check = true;
+                check = false;
             }
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
