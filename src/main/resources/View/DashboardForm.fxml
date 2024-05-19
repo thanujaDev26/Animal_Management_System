@@ -151,6 +151,11 @@
             </ImageView>
          </graphic>
       </Button>
+      <Button fx:id="btnAddAdmin" graphicTextGap="20.0" layoutX="1000.0" layoutY="33.0" mnemonicParsing="false" onAction="#switchToUpPage" prefHeight="42.0" prefWidth="186.0" style="-fx-background-color: #353a52;" styleClass="loginFormButton" stylesheets="@../style/ComponentStyleSheet.css" text="Add Admin" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="15.0" />
+         </font>
+      </Button>
       <AnchorPane fx:id="animalDetailsAnchorPane" layoutX="748.0" prefHeight="743.0" prefWidth="672.0" style="-fx-background-color: #daeee3;">
          <children>
             <Text fill="#353a52" layoutX="86.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animal Management Form">

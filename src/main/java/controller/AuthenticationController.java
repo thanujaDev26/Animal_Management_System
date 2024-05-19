@@ -138,10 +138,26 @@ public class AuthenticationController {
         return check;
     }
 
+    @FXML
     protected void switchToDashBoard(ActionEvent event) throws IOException {
         Parent loginParent = FXMLLoader.load(getClass().getResource("/view/DashBoardForm.fxml"));
         Scene loginScene = new Scene(loginParent);
         Stage window = (Stage) btnSignIn.getScene().getWindow();
+        window.close();
+        Stage window1 = new Stage();
+        window1.setScene(loginScene);
+        window1.centerOnScreen();
+        // Set the application icon for the dashboard stage
+        Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
+        window1.getIcons().add(image);
+        window1.setTitle("Wildlife Management System - Admin Dashboard Page");
+        window1.show();
+    }
+    @FXML
+    protected void switchToDashBoard1(ActionEvent event) throws IOException {
+        Parent loginParent = FXMLLoader.load(getClass().getResource("/view/DashBoardForm.fxml"));
+        Scene loginScene = new Scene(loginParent);
+        Stage window = (Stage) btnToLogin.getScene().getWindow();
         window.close();
         Stage window1 = new Stage();
         window1.setScene(loginScene);
