@@ -25,22 +25,6 @@ public class DBRestore {
             } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
             }
-        }else{
-            try {
-                String command = String.format("mongorestore --db %s %s/%s", databaseName, backupPath, databaseName);
-                Process process = Runtime.getRuntime().exec(command);
-
-                // Read the output from the command
-                BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    System.out.println(line);
-                }
-                process.waitFor();
-                System.out.println("Restore completed.");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }
     }
 }

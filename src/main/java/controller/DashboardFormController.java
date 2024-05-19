@@ -108,6 +108,9 @@ public class DashboardFormController implements Initializable {
     // Reference to the "Manage Animal" button defined in the FXML file
     @FXML
     private Button btnManageAnimal;
+    // Reference to the "Add Admin" button defined in the FXML file
+    @FXML
+    private Button btnAddAdmin;
 
     @FXML
     private ImageView imageView1;
@@ -358,6 +361,7 @@ public class DashboardFormController implements Initializable {
         }
     }
 
+
     private void setDashboardAnimalDetails() {
         List<Animal> animals = animalModel.getAnimals();
 
@@ -377,6 +381,7 @@ public class DashboardFormController implements Initializable {
 
     public void setUser() {
         btnManageAnimal.setVisible(false);
+        btnAddAdmin.setVisible(false);
         imgDashboardLogo.setY(30);
     }
 
@@ -391,6 +396,22 @@ public class DashboardFormController implements Initializable {
         stage.getIcons().add(image);
         stage.setTitle("Wildlife Management System - Login Page");
         dashboardForm.getScene().getWindow().hide();
+    }
+
+    @FXML
+    protected void switchToUpPage(ActionEvent event) throws IOException {
+        Parent loginParent = FXMLLoader.load(getClass().getResource("/view/signup-page.fxml"));
+        Scene loginScene = new Scene(loginParent);
+        Stage window = (Stage) btnAddAdmin.getScene().getWindow();
+        window.close();
+        Stage window1 = new Stage();
+        window1.setScene(loginScene);
+        window1.centerOnScreen();
+        // Set the application icon for the dashboard stage
+        Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
+        window1.getIcons().add(image);
+        window1.setTitle("Wildlife Management System - Admin Sign Up Page");
+        window1.show();
     }
 
     public void closeOnMouseClicked(MouseEvent mouseEvent) {
