@@ -1,0 +1,41 @@
+.window-image{
+    -fx-border-radius: 100;
+    -fx-background-radius: 100;
+}
+
+.window-background{
+    -fx-background-color: rgba(202, 246, 204, 1);
+    -fx-background-radius: 0 50 50 0;
+}
+
+.login-label{
+    -fx-background-color: #daeee3;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-border-width: 1;
+    -fx-border-color: #353a52;
+    -fx-padding: -1 0 0 10;
+    -fx-font-size: 20px;
+    -fx-prompt-text-fill: rgba(131, 208, 103, 1);
+}
+
+pass-label{
+
+}
+
+.in-alert{
+    -fx-alignment: center;
+}
+
+.in-button{
+    -fx-background-color: white;
+    -fx-border-color: #0f6e39;
+    -fx-border-width: 1;
+    -fx-text-fill: #0f6e39;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.up-button{
+    -fx-background-color: none;
+}

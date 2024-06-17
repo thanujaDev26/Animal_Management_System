@@ -1,0 +1,74 @@
+.searchButtonInDashboard{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+}
+
+.searchButtonInDashboard:hover{
+    -fx-background-color: #cdcdcd;
+}
+
+.saveButtonInManageAnimalForm{
+    -fx-background-color: #43c17a;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+.saveButtonInManageAnimalForm:hover{
+    -fx-background-color: #38a367;
+}
+
+.searchIconInDashboard{
+    -fx-background-color: #f4f4f4;
+    -fx-background-radius: 10;
+}
+
+.searchIconInDashboard:hover{
+    -fx-background-color: #cdcdcd;
+}
+
+.importButtonInDashboard{
+    -fx-background-color: white;
+    -fx-border-color: #0f6e39;
+    -fx-border-width: 1;
+    -fx-text-fill: #0f6e39;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.importButtonInDashboard:hover{
+    -fx-background-color: #cdcdcd;
+}
+
+.textFieldInDashboard{
+    -fx-background-color: #daeee3;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-border-color: #353a52;
+}
+
+.textFieldInAnimalManageForm{
+    -fx-background-color: #daeee3;
+    -fx-background-radius: 10;
+    -fx-border-width: 1;
+    -fx-border-color: #353a52;
+    -fx-border-radius: 10;
+}
+
+.comboboxInAnimalManageForm{
+    -fx-background-color: #daeee3;
+    -fx-background-radius: 10;
+    -fx-border-width: 1;
+    -fx-border-color: #353a52;
+    -fx-border-radius: 10;
+    -fx-font-size: 19;
+}
+
+.loginFormButton{
+    -fx-background-color: #38a367;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.loginFormButton:hover{
+    -fx-background-color: #28734c;
+}
