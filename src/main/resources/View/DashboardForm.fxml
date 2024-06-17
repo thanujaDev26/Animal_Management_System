@@ -24,24 +24,24 @@
             </font>
         </Text>
         <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#43c17a" height="202.0" layoutX="49.0" layoutY="206.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="656.0" />
-        <Text fill="#353a52aa" layoutX="58.0" layoutY="128.0" opacity="0.66" strokeType="OUTSIDE" strokeWidth="0.0" text="Insights into Biodiversity">
+        <Text fill="#353a52aa" layoutX="58.0" layoutY="128.0" opacity="0.66" strokeType="OUTSIDE" strokeWidth="0.0" text="Drive your Dream!">
             <font>
                 <Font name="Poppins Regular" size="15.0" />
             </font>
         </Text>
-        <Text fill="#353a52" layoutX="74.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wildlife Management">
+        <Text fill="#353a52" layoutX="74.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Who we are?">
             <font>
                 <Font name="SansSerif Regular" size="31.0" />
             </font>
         </Text>
-        <Text fill="WHITE" layoutX="74.0" layoutY="301.0" opacity="0.86" strokeType="OUTSIDE" strokeWidth="0.0" text="A wildlife management system tracks key data about individual animals, including species, location, behavior, and health, aiding conservation efforts through informed decision-making and advanced technology." textAlignment="JUSTIFY" wrappingWidth="370.125">
+        <Text fill="WHITE" layoutX="74.0" layoutY="301.0" opacity="0.86" strokeType="OUTSIDE" strokeWidth="0.0" text="CarHouse tracks essential data on electric and eco-friendly vehicles, including model, location, usage, and maintenance. This promotes sustainable transportation through informed decision-making and advanced technology, supporting environmental conservation with low carbon footprint vehicles." textAlignment="JUSTIFY" wrappingWidth="370.125">
             <font>
                 <Font name="Poppins Regular" size="14.0" />
             </font>
         </Text>
         <ImageView fx:id="imgDashboardLogo" fitHeight="229.0" fitWidth="249.0" layoutX="444.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../image/dashboardManageAnimal.png" />
+                <Image url="@../image/tesla.png" />
             </image>
         </ImageView>
         <Rectangle arcWidth="25.0" fill="#daeee3" height="880.0" layoutX="748.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="672.0" />
@@ -56,7 +56,7 @@
             <Image url="@../image/cameraIcon.png" />
          </image>
       </ImageView>
-      <JFXTextField fx:id="txtSearch" focusColor="#405aa800" layoutX="75.0" layoutY="465.0" onAction="#txtSearchOnAction" prefHeight="41.0" prefWidth="535.0" promptText="Search animals" styleClass="txtSearchInDashboard" stylesheets="@../style/ComponentStyleSheet.css" unFocusColor="#4d4d4d00">
+      <JFXTextField fx:id="txtSearch" focusColor="#405aa800" layoutX="75.0" layoutY="465.0" onAction="#txtSearchOnAction" prefHeight="41.0" prefWidth="535.0" promptText="Search Vehicles" styleClass="txtSearchInDashboard" stylesheets="@../style/ComponentStyleSheet.css" unFocusColor="#4d4d4d00">
          <font>
             <Font name="Poppins Regular" size="19.0" />
          </font>

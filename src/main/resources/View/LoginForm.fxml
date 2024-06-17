@@ -9,9 +9,9 @@
 
 <AnchorPane prefHeight="461.0" prefWidth="734.0" style="-fx-background-color: #daeee3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
-      <ImageView fx:id="imgDashboardLogo" fitHeight="112.0" fitWidth="114.0" layoutX="606.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgDashboardLogo" fitHeight="150.0" fitWidth="150.0" layoutX="606.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/dashboardManageAnimal.png" />
+            <Image url="@../image/blackLogo.png" />
          </image>
       </ImageView>
       <Button fx:id="btnAdmin" contentDisplay="TOP" graphicTextGap="20.0" layoutX="398.0" layoutY="169.0" mnemonicParsing="false" onAction="#btnAdminOnAction" prefHeight="156.0" prefWidth="192.0" styleClass="loginFormButton" stylesheets="@../style/ComponentStyleSheet.css" text="Admin" textFill="WHITE">
@@ -43,7 +43,7 @@
             <Font name="SansSerif Regular" size="26.0" />
          </font>
       </Text>
-      <Text fill="#516f0e" layoutX="166.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wildlife Management System">
+      <Text fill="#516f0e" layoutX="166.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car House Management System">
          <font>
             <Font name="SansSerif Regular" size="31.0" />
          </font>

@@ -13,9 +13,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-/**
- * @author Amil Srinath
- */
+
+
 public class LoginFormController {
 
     public Button btnAdmin;
@@ -33,7 +32,7 @@ public class LoginFormController {
         // Set the application icon for the dashboard stage
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
         window1.getIcons().add(image);
-        window1.setTitle("Wildlife Management System - Admin Sign In Page");
+        window1.setTitle("Car House  - Admin Sign In Page");
         window1.show();
         DBRestore.restore();
     }
@@ -54,7 +53,7 @@ public class LoginFormController {
         // Set the application icon for the dashboard stage
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
         window1.getIcons().add(image);
-        window1.setTitle("Wildlife Management System - User Dashboard Page");
+        window1.setTitle("Car House - User Dashboard Page");
         window1.show();
         DBRestore.restore();
     }

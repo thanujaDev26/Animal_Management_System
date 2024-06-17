@@ -1,5 +1,5 @@
-.progress-bar{
-    -fx-accent: #43c17a;
+.progress-bar {
+    -fx-accent: #3a77cf; /* Adjust this color code to your preferred shade of blue */
 }
 
 .table-view .column-header {
@@ -11,5 +11,5 @@
 }
 
 .background {
-    background-image: linear-gradient(#43c17a, #0f6e39);
+    background-image: linear-gradient(#3a77cf, #0f6e39); /* Adjust gradient colors if needed */
 }

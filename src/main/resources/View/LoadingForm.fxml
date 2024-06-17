@@ -9,15 +9,15 @@
 
 <AnchorPane prefHeight="683.0" prefWidth="820.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoadingFormController">
    <children>
-      <ImageView fitHeight="611.0" fitWidth="760.0" layoutX="34.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="611.0" fitWidth="760.0" layoutX="100.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/loadingFormImg.png" />
          </image>
       </ImageView>
       <ProgressBar fx:id="progressBar" layoutX="91.0" layoutY="637.0" prefHeight="23.0" prefWidth="639.0" progress="0.0" stylesheets="@../style/progressBar.css" />
-      <ImageView fitHeight="116.0" fitWidth="120.0" layoutX="340.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="340.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/bird.gif" />
+            <Image url="@../image/welcome.gif" />
          </image>
       </ImageView>
       <Text fill="#ffffff4a" layoutX="91.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2024">
