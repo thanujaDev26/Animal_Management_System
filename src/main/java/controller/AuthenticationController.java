@@ -150,7 +150,7 @@ public class AuthenticationController {
         // Set the application icon for the dashboard stage
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
         window1.getIcons().add(image);
-        window1.setTitle("Wildlife Management System - Admin Dashboard Page");
+        window1.setTitle("Car House- Admin Dashboard Page");
         window1.show();
     }
     @FXML
@@ -165,7 +165,7 @@ public class AuthenticationController {
         // Set the application icon for the dashboard stage
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
         window1.getIcons().add(image);
-        window1.setTitle("Wildlife Management System - Admin Dashboard Page");
+        window1.setTitle("Car House - Admin Dashboard Page");
         window1.show();
     }
 
@@ -181,7 +181,7 @@ public class AuthenticationController {
         // Set the application icon for the dashboard stage
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
         window1.getIcons().add(image);
-        window1.setTitle("Wildlife Management System - Admin Sign In Page");
+        window1.setTitle("Car House - Admin Sign In Page");
         window1.show();
     }
 
@@ -197,7 +197,7 @@ public class AuthenticationController {
         // Set the application icon for the dashboard stage
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
         window1.getIcons().add(image);
-        window1.setTitle("Wildlife Management System - Admin Sign Up Page");
+        window1.setTitle("Car House - Admin Sign Up Page");
         window1.show();
     }
     @FXML
@@ -212,7 +212,7 @@ public class AuthenticationController {
         // Set the application icon for the dashboard stage
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
         window1.getIcons().add(image);
-        window1.setTitle("Wildlife Management System - Login Page");
+        window1.setTitle("Car House - Login Page");
         window1.show();
     }
 }

@@ -171,7 +171,7 @@ public class DashboardFormController implements Initializable {
 //        stage.centerOnScreen();
         stage.setY(-10);
         // Set the title for the Animal Form stage
-        stage.setTitle("Wildlife Management System - Animal Page");
+        stage.setTitle("Car House - Vehicles Page");
 
         // Set the application icon for the dashboard stage
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
@@ -323,10 +323,10 @@ public class DashboardFormController implements Initializable {
             if (animal != null) {
                 showSearchResult(animal);
             } else {
-                new Alert(Alert.AlertType.WARNING, "Couldn't find the animal.").show();
+                new Alert(Alert.AlertType.WARNING, "Couldn't find the vehicle.").show();
             }
         } else {
-            new Alert(Alert.AlertType.WARNING, "Please enter the name of animal").show();
+            new Alert(Alert.AlertType.WARNING, "Please enter the name of vehicle").show();
         }
     }
 
@@ -394,7 +394,7 @@ public class DashboardFormController implements Initializable {
         // Set the application icon for the dashboard stage
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
         stage.getIcons().add(image);
-        stage.setTitle("Wildlife Management System - Login Page");
+        stage.setTitle("Car House - Login Page");
         dashboardForm.getScene().getWindow().hide();
     }
 
@@ -410,7 +410,7 @@ public class DashboardFormController implements Initializable {
         // Set the application icon for the dashboard stage
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
         window1.getIcons().add(image);
-        window1.setTitle("Wildlife Management System - Admin Sign Up Page");
+        window1.setTitle("Car House Management System - Admin Sign Up Page");
         window1.show();
     }
 
@@ -430,14 +430,14 @@ public class DashboardFormController implements Initializable {
         if (animal != null) {
             showSearchResult(animal);
         } else {
-            new Alert(Alert.AlertType.WARNING, "Couldn't find the animal.").show();
+            new Alert(Alert.AlertType.WARNING, "Couldn't find the Vehicle.").show();
         }
     }
 
     private void showSearchResult(Animal animal) {
         animalDetailsAnchorPane.setVisible(true);
         mainVBox.getChildren().clear();
-        btnManageAnimal.setText("Update Animal");
+        btnManageAnimal.setText("Update Vehicle");
         searchedAnimal = animal;
 
         List<ImageView> imageViews = Arrays.asList(imageView1, imageView2, imageView3);

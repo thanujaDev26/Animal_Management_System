@@ -56,7 +56,7 @@ public class LoadingFormController implements Initializable {
                 Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/image/icon.png")));
                 loginStage.getIcons().add(image);
                 // Set the title for the dashboard stage
-                loginStage.setTitle("Wildlife Management System - Login Page");
+                loginStage.setTitle("Car House - Login Page");
                 // Set the scene for the dashboard stage
                 loginStage.setScene(loginScene);
                 // Show the dashboard stage
